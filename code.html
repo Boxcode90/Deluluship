@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <style>
+        body {
+          background-color:#d67c59;
+      }
+     .topBorder{
+         height:200px;
+         width:auto;
+         background-color:#5650c1;         
+         border-radius:20px;
+         font-size:100px;
+         text-align:center;
+         font-family:Serif;
+     }
+     
+    .hd{
+       height:100px;
+       width:auto;
+       background-color:#36d6cd;
+       text-align:center;
+       border-radius:20px;
+       font-size:40px;
+       font-weight:bold;
+    }
+    
+    #menace{
+      font-style:italic;
+      color:#d63647  
+    }
+    
+  
+  #qns{
+      height:600px;
+      width:800px;
+      border:solid 10px;
+      position:absolute;
+      top:420px;
+      left:90px;
+      border-radius:20px;
+    }
+    
+    #ans1{
+        height:30px;
+        width:600px;
+        text-align:center;
+        border:solid 5px;
+        background-color:#ffffff;
+        border-radius:20px;
+        margin-top:70px;
+        position:relative;
+        left:100px;
+    }
+    
+    #ans2{
+        height:30px;
+        width:600px;
+        text-align:center;
+        border:solid 5px;
+        background-color:#ffffff;
+        border-radius:20px;
+        margin-top:70px;
+        position:relative;
+        left:100px;
+    }
+    
+    #ans3{
+        height:30px;
+        width:600px;
+        text-align:center;
+        border:solid 5px;
+        background-color:#ffffff;
+        border-radius:20px;
+        margin-top:70px;
+        position:absolute;
+        left:100px;
+    }
+    
+    #ans4{
+        height:30px;
+        width:600px;
+        text-align:center;
+        border:solid 5px;
+        background-color:#ffffff;
+        border-radius:20px;
+        margin-top:70px;
+        
+    }
+    
+    #ans5{
+        height:30px;
+        width:600px;
+        text-align:center;
+        border:solid 2px;
+        background-color:#b8b8b8;
+        border-radius:20px;
+        margin-top:70px;
+    }
+    
+    #s{
+       font-weight:bold;
+       position:absolute;
+       left:100px;
+       font-size:30px;
+       
+       
+    }
+    
+    #btn{
+      height:100px;
+      width:200px;
+      position:absolute;
+      left:400px;
+      top:800px;
+      border-radius:30px;
+      border:solid 5px;
+      font-size:50px;
+      background-color:#00eaff;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="topBorder">
+       QUIZATHON 
+    </div>
+   <div class="hd">
+       <p>Welcome to <span id="menace">Ultimate homies</span> quiz competition</p>
+   </div>
+   <div id="qns">
+    <p id="s"> What comes after H? </p>
+   <input id="ans1"type="password"><br>
+       <p id="s"> I Woke up at 10 __? (am/pm)</p>
+   <input id="ans2"type="password"><br>
+       <p id="s"> What do you call two boys kissing? </p>
+   <input id="ans3"type="password"><br>
+   </div>
+   <button id="btn" onclick="display()">
+       Submit
+   </button>
+   <script>
+       
+       function display(){
+           let one = document.getElementById("ans1").value ;
+           let two = document.getElementById("ans2").value ;
+           let three = document.getElementById("ans3").value ;
+        
+       alert("You have entered:" + one + "_" + "_" + two + "_" + three) 
+           
+       }
+       
+   </script>
+</body>
+</html>
